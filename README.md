@@ -1,2 +1,6 @@
-# Programming-Docs
-General repo for non-sensitive docs (GitHub procedures, IDE setup, etc.)
+# FRC 10011 Programming Docs
+General documentation repository for non-sensitive information (GitHub procedures, IDE setup, etc.)
+
+## Contents
+* Administration
+  * [GitHub Management](./admin/github.md)
