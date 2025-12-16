@@ -1,7 +1,7 @@
 # GitHub Team Administration
 
 ## Adding new users
-1. Go to https://github.com/orgs/DRSS-Robotics/teams/gem-city-gridrunners-frc-10011
+1. Go to https://github.com/orgs/DRSS-Robotics/teams/frc-10011-gridrunners
 2. "Add a member"
 3. Search for the username -> "Invite to this organization and team"
 4. After invite is accepted, users will have default roles for FRC 10011 repos.
@@ -9,7 +9,7 @@
 6. Coaches/mentors -> owner at org level.
 
 ## Adding a repo to a team
-1. Go to the team repositories page: https://github.com/orgs/DRSS-Robotics/teams/gem-city-gridrunners-frc-10011/repositories
+1. Go to the team repositories page: https://github.com/orgs/DRSS-Robotics/teams/frc-10011-gridrunners/repositories
 2. "Add repository"
 3. Search for the repo name -> "Add repository to team"
 4. Change the "Role" to "Write" (applies to all members on the team)
