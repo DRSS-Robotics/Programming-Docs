@@ -1,5 +1,22 @@
 # GitHub Team Administration
 
+## Teams and Roles Overview
+The [DRSS Organization](https://github.com/organizations/DRSS-Robotics) contains the [FRC 10011 Gridrunners](https://github.com/orgs/DRSS-Robotics/teams/frc-10011-gridrunners) team, representing general team members, and [Programming Leads](https://github.com/orgs/DRSS-Robotics/teams/programming-leads), representing coaches, mentors, and student leads.  Repositories are assigned access at the team level; for example, [GemScout-FrontEnd](https://github.com/DRSS-Robotics/GemScout-Frontend) has granted _write_ access to FRC 10011, and _maintain_ to Programming Leads.
+
+```mermaid
+graph TD;
+  drss["(Org) DRSS"]
+  10011["(Team) FRC 10011 Gridrunners"]
+  prog_leads["(Team) Programming Leads"]
+  role_write["All-repository write"]
+  role_maint["All-repository maintain"]
+
+  drss-->10011
+  10011-.->role_write
+  prog_leads-.->role_write
+  prog_leads-.->role_maint  
+```
+
 ## Adding new users
 1. Go to https://github.com/orgs/DRSS-Robotics/teams/frc-10011-gridrunners
 2. "Add a member"
