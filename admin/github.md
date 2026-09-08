@@ -1,7 +1,7 @@
 # GitHub Team Administration
 
 ## Teams and Roles Overview
-The [DRSS Organization](https://github.com/organizations/DRSS-Robotics) contains the [FRC 10011 Gridrunners](https://github.com/orgs/DRSS-Robotics/teams/frc-10011-gridrunners) team, representing general team members, and [Programming Leads](https://github.com/orgs/DRSS-Robotics/teams/programming-leads), representing coaches, mentors, and student leads.  Repositories are assigned access at the team level; for example, [GemScout-FrontEnd](https://github.com/DRSS-Robotics/GemScout-Frontend) has granted _write_ access to FRC 10011, and _maintain_ to Programming Leads.
+The [DRSS Organization](https://github.com/organizations/DRSS-Robotics) contains the [FRC 10011 Gridrunners](https://github.com/orgs/DRSS-Robotics/teams/frc-10011-gridrunners) team, representing general team members, and [Programming Leads](https://github.com/orgs/DRSS-Robotics/teams/programming-leads), representing coaches, mentors, and student leads.  Repositories inherit access from the Teams; for example, the [FRC-Age-2026](https://github.com/DRSS-Robotics/FRC-Age-2026) repo allows _write_ access to FRC 10011 (inherited from the "All-repository write" permission), and _maintain_ to Programming Leads (inherited from the "All-repository maintain" permission).
 
 ```mermaid
 graph TD;
@@ -10,11 +10,16 @@ graph TD;
   prog_leads["(Team) Programming Leads"]
   role_write["All-repository write"]
   role_maint["All-repository maintain"]
+  repo_FRC_Age_2026["(Repo) FRC-Age-2026"]
 
   drss-->10011
   10011-.->role_write
   prog_leads-.->role_write
-  prog_leads-.->role_maint  
+  prog_leads-.->role_maint
+
+  10011-->|All-repo write|repo_FRC_Age_2026
+  prog_leads-->|All-repo maintain|repo_FRC_Age_2026
+
 ```
 
 ## Adding new users
