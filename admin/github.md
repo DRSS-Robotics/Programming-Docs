@@ -8,18 +8,14 @@ graph TD;
   drss["(Org) DRSS"]
   10011["(Team) FRC 10011 Gridrunners"]
   prog_leads["(Team) Programming Leads"]
-  role_write["All-repository write"]
-  role_maint["All-repository maintain"]
   repo_FRC_Age_2026["(Repo) FRC-Age-2026"]
 
+  drss-->repo_FRC_Age_2026
   drss-->10011
-  10011-.->role_write
-  prog_leads-.->role_write
-  prog_leads-.->role_maint
+  10011-->prog_leads
 
-  10011-->|All-repo write|repo_FRC_Age_2026
-  prog_leads-->|All-repo maintain|repo_FRC_Age_2026
-
+  10011-.->|All-repo write|repo_FRC_Age_2026
+  prog_leads-.->|All-repo maintain|repo_FRC_Age_2026
 ```
 
 ## Adding new users
